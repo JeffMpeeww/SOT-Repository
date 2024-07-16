@@ -42,80 +42,52 @@
     }
   </style>
 
-  <title>View Student Payments</title>
+  <title>Register</title>
 </head>
 
 <body>
   <ul class="nav justify-content-center">
     <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="#">View Payments</a>
+      <a class="nav-link active" aria-current="page" href="Login.html">Login</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="CreateSessions.html">Create Class Sessions</a></li>
-      <li class="nav-item">
-        <a class="nav-link active" href="Login.html">Logout</a>
-    </li>
+      <a class="nav-link" href="Register.html">Register</a></li>
   </ul>
   <hr>
   <div class="main-container yoga-template">
     <div class="inside-container contact-section">
-      <div class="row sections-detail">
-        <div class="col-12">
-          <h2 class="section-title">View Payments</h2>
-          <p class="section-title-desc">
-            View All the Payments made on the system
-          </p>
-        </div>
-      </div>
       <class="col-lg-6">
         <div class="appointment">
-          <h2 class="appointment-title">Payments</h2>
-          <div class="row"></div>
-          <table>
-            <thead>
-              <tr>
-                <th><a>User</a></th>
-                <th><a>Amount</a></th>
-                <th><a>Period</a></th>
-                <th><a>Status</a></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><a href="ViewPyament.html" >Mufunwa</a></td>
-                <td><a>R 1000</a></td>
-                <td><a>July 2024 - July 2024</a></td>
-                <td><a>Paid</a></td>
-              </tr>
-              <tr>
-                <td><a href="#" >Siya</a></td>
-                <td><a>R 3000</a></td>
-                <td><a>July 2024 - September 2024</a></td>
-                <td><a>Paid</a></td>
-              </tr>
-              <tr>
-                <td><a href="#" >Logic</a></td>
-                <td><a>R 2000</a></td>
-                <td><a>July 2024 - August 2024</a></td>
-                <td><a>Paid</a></td>
-              </tr>
-            </tbody>
-          </table>
-          <hr>
-          <a type="submit" style="width: 100%;
-              padding: 18px 0 13px;
-              background-color: #7b6cd5;
-              border: 1px solid #7b6cd5;
-              border-radius: 3px;
-              color: #fff;
-              font-family: 'Josefin Sans', sans-serif;
-              font-size: 20px;
-              line-height: 25px;
-              font-weight: 700;
-              letter-spacing: 0.6px;
-              text-transform: uppercase;
-              text-align: center;" href="AddPayment.html">Add New Payment</a>
-        </div>
+            <h2 class="appointment-title">Welcome</h2>
+            <p class="appointment-desc">Please enter your username and password to continue.</p>
+            <div action="#" class="appointment-form">
+              <div class="row">
+                <div class="col-lg-6 appointment-form-col-right">
+                  <input type="text" class="form-control appointment-form-input" placeholder="Name" required="">
+                </div>
+                <div class="col-lg-6 appointment-form-col-left">
+                  <input type="text" class="form-control appointment-form-input" placeholder="Last Name" required=""
+                    value="" size="10" maxlength="10">
+                </div>
+                <div class="col-lg-6 appointment-form-col-right">
+                  <input type="email" class="form-control appointment-form-input" placeholder="Email" required="">
+                </div>
+                <div class="col-lg-6 appointment-form-col-right">
+                  <input type="tel" class="form-control appointment-form-input" placeholder="Phone Number" required="">
+                </div>
+                <div class="col-lg-6 appointment-form-col-right">
+                  <input type="password" class="form-control appointment-form-input" placeholder="Password" required="">
+                </div>
+                <div class="col-lg-6 appointment-form-col-right">
+                  <input type="password" class="form-control appointment-form-input" placeholder="Confirm Password" required="">
+                </div>
+
+                <div class="col-12 appointment-form-col-right">
+                  <button type="submit" href="Login.html" class="appointment-form-btn" value="">Register</button>
+                </div>
+              </div>
+            </div>
+          </div>
     </div>
     <hr>
     <!--Copyright-->

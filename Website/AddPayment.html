@@ -26,16 +26,13 @@
 <body>
   <ul class="nav justify-content-center">
     <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="#">Active</a>
+      <a class="nav-link active" aria-current="page" href="#">View Payments</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">View</a>
+      <a class="nav-link" href="CreateSessions.html">Create Class Sessions</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+      <a class="nav-link active" href="Login.html">Logout</a>
     </li>
   </ul>
   <hr>
@@ -49,7 +46,8 @@
       <div class="row">
         <div class="appointment">
           <h2 class="appointment-title">Add Payment Details</h2>
-          <p class="appointment-desc">Select the start Date, End Date, along with the student name and the amount paid</p>
+          <p class="appointment-desc">Select the start Date, End Date, along with the student name and the amount paid
+          </p>
           <form id="paymentForm" class="appointment-form">
             <div class="row">
               <div class="col-lg-6 appointment-form-col-left">
@@ -67,10 +65,11 @@
                 <input type="date" id="endDate" class="form-control appointment-form-input" required="" />
               </div>
               <div class="col-lg-6 appointment-form-col-right">
-                <input type="number" id="amount" class="form-control appointment-form-input" placeholder="Amount" required="" step="0.01" />
+                <input type="number" id="amount" class="form-control appointment-form-input" placeholder="Amount"
+                  required="" step="0.01" />
               </div>
               <div class="col-12 appointment-form-col-right">
-                <button type="submit" class="appointment-form-btn">Create Payment</button>
+                <a type="submit" class="appointment-form-btn" href="ViewPayments.html" style="text-align: center;">Create Payment</a>
               </div>
             </div>
           </form>
@@ -84,7 +83,8 @@
       <div class="inside-container">
         <div class="row">
           <div class="col-md-6 order-2 order-md-12">
-            <p>&copy; 2019 All Rights Reserved. Created by <a href="https://www.webdomus.net/" class="created-by">Web Domus Italia</a></p>
+            <p>&copy; 2019 All Rights Reserved. Created by <a href="https://www.webdomus.net/" class="created-by">Web
+                Domus Italia</a></p>
           </div>
           <div class="col-md-6 social order-1 order-md-12">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -108,19 +108,6 @@
         const startDate = document.getElementById('startDate').value;
         const endDate = document.getElementById('endDate').value;
 
-        fetch('http://localhost:3000/payment/create', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({ Email: email, Amount: amount, StartDate: startDate, EndDate: endDate }),
-        })
-        .then(response => response.json())
-        .then(data => {
-          alert(data.message);
-          document.getElementById('paymentForm').reset();
-        })
-        .catch(error => console.error('Error creating payment:', error));
       });
     });
   </script>

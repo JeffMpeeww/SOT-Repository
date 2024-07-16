@@ -20,53 +20,45 @@
   <link rel="stylesheet" type="text/css" href="font/web-font.css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" rel="stylesheet" />
 
-  <title>View Student Payment Details</title>
+  <title>Create Class Sessions</title>
 </head>
 
 <body>
   <ul class="nav justify-content-center">
     <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="#">View Payments</a>
+      <a class="nav-link active" href="ViewPayments.html">View Payments</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="CreateSessions.html">Create Class Sessions</a>
-    </li>
+      <a class="nav-link" href="CreateSessions.html">Create Class Sessions</a></li>
     <li class="nav-item">
       <a class="nav-link active" href="Login2.html">Logout</a>
     </li></ul>
   <hr>
   <div class="main-container yoga-template">
     <div class="inside-container contact-section">
-      <div class="row sections-detail">
-        <div class="col-12">
-          <h2 class="section-title">View and Update Payment</h2>
-        </div>
-      </div>
       <div class="row">
         <div class="appointment">
-          <h2 class="appointment-title">Payment Details</h2>
-          <p class="appointment-desc">
-            View and update the payment details for a student.
-          </p>
+          <h2 class="appointment-title">Create Class Session</h2>
+
           <form id="paymentForm" class="appointment-form">
             <div class="row">
               <div class="col-lg-6 appointment-form-col-left">
-                <input type="text" id="email" class="form-control appointment-form-input" placeholder="Mufunwa@gmail.com"
+                <input type="text" id="email" class="form-control appointment-form-input" placeholder="Instructor's email"
                   required />
               </div>
               <div class="col-lg-6 appointment-form-col-right">
-                <input type="number" id="amount" class="form-control appointment-form-input" placeholder="1000"
+                <input type="number" id="amount" class="form-control appointment-form-input" placeholder="Capacity"
                   required />
               </div>
               <div class="col-lg-6 appointment-form-col-left">
                 <input type="date" id="startDate" class="form-control appointment-form-input data-input" required />
               </div>
               <div class="col-lg-6 appointment-form-col-right">
-                <input type="date" id="endDate" class="form-control appointment-form-input data-input" required />
+                <input type="time" id="startTime" class="form-control appointment-form-input data-input" required />
               </div>
               <div class="col-12 appointment-form-col">
-                <a type="submit" class="appointment-form-btn" style="text-align: center;" href="ViewPayments.html">
-                  Update Payment Details
+                <a type="submit" class="appointment-form-btn" style="text-align: center;" href="ClassSchedule.html">
+                  Upload class Session
                 </a>
               </div>
             </div>
@@ -94,13 +86,6 @@
       </div>
     </footer>
   </div>
-
-
-  <script>
-    // Set the value of the startDate and endDate input fields
-    document.getElementById('startDate').value = "2024-07-01";
-    document.getElementById('endDate').value = "2024-07-01";
-  </script>
 </body>
 
 </html>

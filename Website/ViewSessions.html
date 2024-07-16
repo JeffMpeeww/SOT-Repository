@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Free Template">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-grid.css">
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" type="text/css" href="css/normailze.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+    <!--Font-->
+    <link rel="stylesheet" type="text/css" href="font/web-font.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" rel="stylesheet">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-radius: 17px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            padding: 15px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+        td {
+            background-color: #7c6cd55b;
+            cursor: pointer;
+        }
+
+        .selected {
+            background-color: #7b6cd5 !important;
+            color: #fff;
+        }
+    </style>
+
+    <title>Book a Session</title>
+</head>
+
+<body>
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link active" href="Login.html">Logout</a>
+        </li>
+    </ul>
+    <hr>
+    <!--Book a session-->
+    <div class="main-container yoga-template">
+        <div class="inside-container contact-section">
+            <class="col-lg-6">
+                <div class="appointment">
+                    <div class="inside-container contact-section">
+                        <h2 class="section-title">Book A Session</h2>
+                        <p class="section-title-desc">
+                            Book a session from the sessions listed below
+                        </p>
+                        <table>
+                            <tr>
+                                <th>Monday</th>
+                                <th>Tuesday</th>
+                                <th>Wednesday</th>
+                                <th>Thursday</th>
+                                <th>Friday</th>
+                                <th>Saturday</th>
+                                <th>Sunday</th>
+                            </tr>
+                            <tr>
+                                <td class="selectable">Orefile@9</td>
+                                <td class="selectable"></td>
+                                <td class="selectable">Orefile@12</td>
+                                <td class="selectable"></td>
+                                <td class="selectable"></td>
+                                <td class="selectable">Orefile@12</td>
+                                <td class="selectable"></td>
+                            </tr>
+                            <tr>
+                                <td class="selectable"></td>
+                                <td class="selectable">Orefile@12</td>
+                                <td class="selectable"></td>
+                                <td class="selectable">Orefile@9</td>
+                                <td class="selectable"></td>
+                                <td class="selectable"></td>
+                                <td class="selectable">Orefile@12</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <a type="submit"
+                        style="width: 100%; padding: 18px 0 13px; background-color: #7b6cd5; border: 1px solid #7b6cd5; border-radius: 3px; color: #fff; font-family: 'Josefin Sans', sans-serif; font-size: 20px; line-height: 25px; font-weight: 700; letter-spacing: 0.6px; text-transform: uppercase; text-align: center;"
+                        href="#">Add New Payment</a>
+                </div>
+                </class>
+        </div>
+        <hr>
+        <!--Copyright-->
+        <footer class="footer">
+            <div class="copyright">
+                <div class="inside-container">
+                    <div class="row">
+                        <div class="col-md-6 order-2 order-md-12">
+                            <p>&copy; 2019 All Rights Reserved. Created by <a href="https://www.webdomus.net/"
+                                    class="created-by">Web
+                                    Domus Italia</a></p>
+                        </div>
+                        <div class="col-md-6 social order-1 order-md-12">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const cells = document.querySelectorAll("td.selectable");
+            cells.forEach(cell => {
+                cell.addEventListener("click", function () {
+                    this.classList.toggle("selected");
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -19,62 +19,67 @@
   <!--Font-->
   <link rel="stylesheet" type="text/css" href="font/web-font.css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" rel="stylesheet" />
+  <style>
+    table {
+      width: 100%;
+      height: 100%;
+      border-collapse: collapse;
+      overflow: auto;
+    }
 
-  <title>View Student Payment Details</title>
+    tbody th:first-child {
+      background-color: #7c6cd55b;
+    }
+
+    tbody tr:nth-child(odd) {
+      background-color: #7c6cd5a2;
+      /* Light gray for odd rows */
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #7c6cd55b;
+      /* Slightly darker gray for even rows */
+    }
+  </style>
+
+  <title>Login</title>
 </head>
 
 <body>
   <ul class="nav justify-content-center">
     <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="#">View Payments</a>
+      <a class="nav-link active" aria-current="page" href="Login.html">Login</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="CreateSessions.html">Create Class Sessions</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link active" href="Login2.html">Logout</a>
-    </li></ul>
+      <a class="nav-link" href="Register.html">Register</a></li>
+  </ul>
   <hr>
   <div class="main-container yoga-template">
     <div class="inside-container contact-section">
-      <div class="row sections-detail">
-        <div class="col-12">
-          <h2 class="section-title">View and Update Payment</h2>
-        </div>
-      </div>
-      <div class="row">
+      <class="col-lg-6">
         <div class="appointment">
-          <h2 class="appointment-title">Payment Details</h2>
-          <p class="appointment-desc">
-            View and update the payment details for a student.
-          </p>
-          <form id="paymentForm" class="appointment-form">
+          <h2 class="appointment-title">Welcome</h2>
+          <p class="appointment-desc">Please enter your username and password to continue.</p>
+          <div action="#" class="appointment-form">
             <div class="row">
-              <div class="col-lg-6 appointment-form-col-left">
-                <input type="text" id="email" class="form-control appointment-form-input" placeholder="Mufunwa@gmail.com"
-                  required />
-              </div>
               <div class="col-lg-6 appointment-form-col-right">
-                <input type="number" id="amount" class="form-control appointment-form-input" placeholder="1000"
-                  required />
+                <input type="email" class="form-control appointment-form-input" placeholder="Email" required="">
               </div>
               <div class="col-lg-6 appointment-form-col-left">
-                <input type="date" id="startDate" class="form-control appointment-form-input data-input" required />
+                <input type="password" class="form-control appointment-form-input" placeholder="Password" required=""
+                  value="" size="10" maxlength="10">
               </div>
-              <div class="col-lg-6 appointment-form-col-right">
-                <input type="date" id="endDate" class="form-control appointment-form-input data-input" required />
-              </div>
-              <div class="col-12 appointment-form-col">
-                <a type="submit" class="appointment-form-btn" style="text-align: center;" href="ViewPayments.html">
-                  Update Payment Details
-                </a>
+
+              <div class="col-12 appointment-form-col-right">
+                <a type="submit" href="ViewSessions.html" class="appointment-form-btn" style="text-align: center;"
+                  value="">Login</a>
               </div>
             </div>
-          </form>
+          </div>
         </div>
-      </div>
     </div>
     <hr>
+    <!--Copyright-->
     <footer class="footer">
       <div class="copyright">
         <div class="inside-container">
@@ -94,13 +99,6 @@
       </div>
     </footer>
   </div>
-
-
-  <script>
-    // Set the value of the startDate and endDate input fields
-    document.getElementById('startDate').value = "2024-07-01";
-    document.getElementById('endDate').value = "2024-07-01";
-  </script>
 </body>
 
-</html>
+</html>.
