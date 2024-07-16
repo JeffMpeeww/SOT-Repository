@@ -1,40 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="Free Template" />
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="bootstrap/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="bootstrap/css/bootstrap-grid.css"
-    />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="Free Template" />
 
-    <!--Stylesheet-->
-    <link rel="stylesheet" type="text/css" href="css/normailze.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-grid.css" />
 
-    <!--Font-->
-    <link rel="stylesheet" type="text/css" href="font/web-font.css" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
-      rel="stylesheet"
-    />
+  <!--Stylesheet-->
+  <link rel="stylesheet" type="text/css" href="css/normailze.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/responsive.css" />
 
-    <title>Add Student Payment Details</title>
-  </head>
+  <!--Font-->
+  <link rel="stylesheet" type="text/css" href="font/web-font.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" rel="stylesheet" />
+
+  <title>Add Student Payment Details</title>
+</head>
+
+<body>
+  <ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#">Active</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">View</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+    </li>
+  </ul>
+  <hr>
   <div class="main-container yoga-template">
     <div class="inside-container contact-section">
       <div class="row sections-detail">
@@ -44,37 +48,82 @@
       </div>
       <div class="row">
         <div class="appointment">
-            <h2 class="appointment-title">Add Payment Details</h2>
-            <p class="appointment-desc">Select the start Date, End Date, along with the student name and the amount paid</p>
-             <form action="#" class="appointment-form">
-                <div class="row">
-                  <div class="col-lg-6 appointment-form-col-left">
-                    <input type="date" class="form-control appointment-form-input data-input" required="">
-                  </div>
-                  <div class="col-lg-6 box-select appointment-form-col-right">
-                    <select name="gender" class="form-control appointment-form-input" >
-                      <option value="choose-class">Select a Student</option>
-                      <option value="class-1">Mufunwa</option>
-                      <option value="class-2">Siya</option>
-                      <option value="class-3">Logic</option>
-                    </select>
-                   </div>
-                   <div class="col-lg-6 appointment-form-col-left">
-                    <input type="date" class="form-control appointment-form-input data-input" required="">
-                  </div>
-                  <div class="col-lg-6 appointment-form-col-right">
-                    <input type="email" class="form-control appointment-form-input" placeholder="Amount" required="">
-                  </div>
-                  <div class="col-12 appointment-form-col-right">
-                    <button type="submit"  class="appointment-form-btn"  value="">Book An Appointment</button>
-                  </div>
-                </div>
-             </form>
-          </div>
-            </form>
-          </div>
+          <h2 class="appointment-title">Add Payment Details</h2>
+          <p class="appointment-desc">Select the start Date, End Date, along with the student name and the amount paid</p>
+          <form id="paymentForm" class="appointment-form">
+            <div class="row">
+              <div class="col-lg-6 appointment-form-col-left">
+                <input type="date" id="startDate" class="form-control appointment-form-input" required="" />
+              </div>
+              <div class="col-lg-6 box-select appointment-form-col-right">
+                <select id="email" name="email" class="form-control appointment-form-input" required>
+                  <option value="" disabled selected>Select a Student</option>
+                  <option value="mufunwa@example.com">Mufunwa</option>
+                  <option value="siya@example.com">Siya</option>
+                  <option value="logic@example.com">Logic</option>
+                </select>
+              </div>
+              <div class="col-lg-6 appointment-form-col-left">
+                <input type="date" id="endDate" class="form-control appointment-form-input" required="" />
+              </div>
+              <div class="col-lg-6 appointment-form-col-right">
+                <input type="number" id="amount" class="form-control appointment-form-input" placeholder="Amount" required="" step="0.01" />
+              </div>
+              <div class="col-12 appointment-form-col-right">
+                <button type="submit" class="appointment-form-btn">Create Payment</button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
   </div>
+  <hr>
+  <footer class="footer">
+    <div class="copyright">
+      <div class="inside-container">
+        <div class="row">
+          <div class="col-md-6 order-2 order-md-12">
+            <p>&copy; 2019 All Rights Reserved. Created by <a href="https://www.webdomus.net/" class="created-by">Web Domus Italia</a></p>
+          </div>
+          <div class="col-md-6 social order-1 order-md-12">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Add your custom JavaScript here -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('paymentForm').addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        const email = document.getElementById('email').value;
+        const amount = document.getElementById('amount').value;
+        const startDate = document.getElementById('startDate').value;
+        const endDate = document.getElementById('endDate').value;
+
+        fetch('http://localhost:3000/payment/create', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ Email: email, Amount: amount, StartDate: startDate, EndDate: endDate }),
+        })
+        .then(response => response.json())
+        .then(data => {
+          alert(data.message);
+          document.getElementById('paymentForm').reset();
+        })
+        .catch(error => console.error('Error creating payment:', error));
+      });
+    });
+  </script>
+</body>
+
 </html>

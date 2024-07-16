@@ -1,118 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="Free Template" />
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="bootstrap/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="bootstrap/css/bootstrap-grid.css"
-    />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="Free Template" />
 
-    <!--Stylesheet-->
-    <link rel="stylesheet" type="text/css" href="css/normailze.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-grid.css" />
 
-    <!--Font-->
-    <link rel="stylesheet" type="text/css" href="font/web-font.css" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
-      rel="stylesheet"
-    />
+  <!--Stylesheet-->
+  <link rel="stylesheet" type="text/css" href="css/normailze.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/responsive.css" />
 
-    <title>View Student Payment Details</title>
-  </head>
+  <!--Font-->
+  <link rel="stylesheet" type="text/css" href="font/web-font.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" rel="stylesheet" />
+
+  <title>View Student Payment Details</title>
+</head>
+
+<body>
+  <ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#">Active</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+    </li>
+  </ul>
   <div class="main-container yoga-template">
     <div class="inside-container contact-section">
       <div class="row sections-detail">
         <div class="col-12">
-          <h2 class="section-title">Add Student Payment</h2>
+          <h2 class="section-title">View and Update Payment</h2>
         </div>
       </div>
       <div class="row">
-          <div class="appointment">
-            <h2 class="appointment-title"></h2>
-            <p class="appointment-desc">
-              At solmen va esser necessi far uniform grammatica, pronunciation e
-              plu sommun paroles.
-            </p>
-            <form action="#" class="appointment-form">
-              <div class="row">
-                <div class="col-lg-6 appointment-form-col-left">
-                  <input
-                    type="text"
-                    class="form-control appointment-form-input"
-                    placeholder="Mufunwa"
-                    required=""
-                  />
-                </div>
-                <div class="col-lg-6 appointment-form-col-right">
-                  <input
-                    type="text"
-                    class="form-control appointment-form-input"
-                    placeholder="Netshirungulu"
-                    required=""
-                  />
-                </div>
-                <div class="col-lg-6 appointment-form-col-left">
-                  <input
-                    type="date"
-                    class="form-control appointment-form-input data-input"
-                    placeholder="2024/07/16"
-                    required=""
-                  />
-                </div>
-                <div class="col-lg-6 appointment-form-col-right">
-                    <input
-                      type="date"
-                      class="form-control appointment-form-input data-input"placeholder="2024/08/16"
-                      required=""
-                    />
-                  </div>
-               
-                <div class="col-lg-6 appointment-form-col-left">
-                  <input
-                    type="tel"
-                    class="form-control appointment-form-input"
-                    placeholder="072 045 0234"
-                    required=""
-                    value=""
-                    size="10"
-                    maxlength="10"
-                  />
-                </div>
-                <div class="col-lg-6 appointment-form-col-right">
-                  <input
-                    type="email"
-                    class="form-control appointment-form-input"
-                    placeholder="mufunwa@gmail.com"
-                    required=""
-                  />
-                </div>
-                
-                <div class="col-12 appointment-form-col-right">
-                  <button type="submit" class="appointment-form-btn" value="">
-                    Update Payment Details
-                  </button>
-                </div>
+        <div class="appointment">
+          <h2 class="appointment-title">Payment Details</h2>
+          <p class="appointment-desc">
+            View and update the payment details for a student.
+          </p>
+          <form id="paymentForm" class="appointment-form">
+            <div class="row">
+              <div class="col-lg-6 appointment-form-col-left">
+                <input type="text" id="email" class="form-control appointment-form-input" placeholder="Student Email" required />
               </div>
-            </form>
-          </div>
+              <div class="col-lg-6 appointment-form-col-right">
+                <input type="text" id="amount" class="form-control appointment-form-input" placeholder="Amount" required />
+              </div>
+              <div class="col-lg-6 appointment-form-col-left">
+                <input type="date" id="startDate" class="form-control appointment-form-input data-input" required />
+              </div>
+              <div class="col-lg-6 appointment-form-col-right">
+                <input type="date" id="endDate" class="form-control appointment-form-input data-input" required />
+              </div>
+              <div class="col-12 appointment-form-col-right">
+                <button type="submit" class="appointment-form-btn" value="">
+                  Update Payment Details
+                </button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
   </div>
+  <footer class="footer">
+    <div class="copyright">
+      <div class="inside-container">
+        <div class="row">
+          <div class="col-md-6 order-2 order-md-12">
+            <p>&copy; 2019 All Rights Reserved. Created by <a href="https://www.webdomus.net/" class="created-by">Web Domus Italia</a></p>
+          </div>
+          <div class="col-md-6 social order-1 order-md-12">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const email = urlParams.get('email'); // Get email from URL query parameter
+      if (!email) {
+        alert('Email parameter is missing in the URL.');
+        return;
+      }
+
+      fetch(`http://localhost:3000/payment/${email}`)
+        .then(response => response.json())
+        .then(payment => {
+          document.getElementById('email').value = payment.Email;
+          document.getElementById('amount').value = payment.Amount;
+          document.getElementById('startDate').value = new Date(payment.StartDate).toISOString().split('T')[0];
+          document.getElementById('endDate').value = new Date(payment.EndDate).toISOString().split('T')[0];
+        })
+        .catch(error => console.error('Error fetching payment:', error));
+
+      document.getElementById('paymentForm').addEventListener('submit', (event) => {
+        event.preventDefault();
+        const email = document.getElementById('email').value;
+        const amount = document.getElementById('amount').value;
+        const startDate = document.getElementById('startDate').value;
+        const endDate = document.getElementById('endDate').value;
+
+        fetch('http://localhost:3000/payment/update', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ Email: email, Amount: amount, StartDate: startDate, EndDate: endDate }),
+        })
+          .then(response => response.json())
+          .then(data => {
+            alert(data.message);
+          })
+          .catch(error => console.error('Error updating payment:', error));
+      });
+    });
+  </script>
+</body>
+
 </html>

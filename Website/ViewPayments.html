@@ -1,101 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="Free Template" />
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="bootstrap/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="bootstrap/css/bootstrap-grid.css"
-    />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="Free Template" />
 
-    <!--Stylesheet-->
-    <link rel="stylesheet" type="text/css" href="css/normailze.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-grid.css" />
 
-    <!--Font-->
-    <link rel="stylesheet" type="text/css" href="font/web-font.css" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
-      rel="stylesheet"
-    />
-    <style>
-        table {
-            width: 100%;height: 100%;border-collapse: collapse;overflow: auto;}
+  <!--Stylesheet-->
+  <link rel="stylesheet" type="text/css" href="css/normailze.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/responsive.css" />
 
-        tbody th:first-child{
-            background-color: #7c6cd55b;
-        }
-        tbody tr:nth-child(odd) {
-            background-color: #7c6cd5a2; /* Light gray for odd rows */
-        }
-        tbody tr:nth-child(even) {
-            background-color: #7c6cd55b; /* Slightly darker gray for even rows */
-        }
-        
-    </style>
+  <!--Font-->
+  <link rel="stylesheet" type="text/css" href="font/web-font.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" rel="stylesheet" />
+  <style>
+    table {
+      width: 100%;
+      height: 100%;
+      border-collapse: collapse;
+      overflow: auto;
+    }
 
-    <title>View Student Payments</title>
-  </head>
-  <body>
-    <div class="main-container yoga-template">
-      <div class="inside-container contact-section">
-        <div class="row sections-detail">
-          <div class="col-12">
-            <h2 class="section-title">View Payments</h2>
-            <p class="section-title-desc">
-              View All the Payments made on the system
-            </p>
-          </div>
+    tbody th:first-child {
+      background-color: #7c6cd55b;
+    }
+
+    tbody tr:nth-child(odd) {
+      background-color: #7c6cd5a2;
+      /* Light gray for odd rows */
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #7c6cd55b;
+      /* Slightly darker gray for even rows */
+    }
+  </style>
+
+  <title>View Student Payments</title>
+</head>
+
+<body>
+  <ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#">Active</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a></li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a></li>
+    <li class="nav-item">
+      <a class="nav-link disabled" aria-disabled="true">Disabled</a></li>
+  </ul>
+  <div class="main-container yoga-template">
+    <div class="inside-container contact-section">
+      <div class="row sections-detail">
+        <div class="col-12">
+          <h2 class="section-title">View Payments</h2>
+          <p class="section-title-desc">View All the Payments made on the system</p>
         </div>
-          <class="col-lg-6">
-            <div class="appointment">
-              <h2 class="appointment-title">Payments</h2>
-              <div class="row"></div><table>
-                <thead>
-                    <tr>
-                        <th><a>User</a></th>
-                        <th><a>Amount</a></th>
-                        <th><a>Period</a></th>
-                        <th><a>Status</a></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><a href="https://example.com/row1col1" target="_blank">Mufunwa</a></td>
-                        <td><a>R 1000</a></td>
-                        <td><a>July 2024 - July 2024</a></td>
-                        <td><a>Paid</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://example.com/row1col2" target="_blank">Siya</a></td>
-                        <td><a>R 3000</a></td>
-                        <td><a>July 2024 - September 2024</a></td>
-                        <td><a>Paid</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://example.com/row1col3" target="_blank">Logic</a></td>
-                        <td><a>R 2000</a></td>
-                        <td><a>July 2024 - August 2024</a></td>
-                        <td><a>Paid</a></td>
-                    </tr>
-                </tbody>
-              </table>
-              <hr>
-              <button type="submit"  style="width: 100%;
+      </div>
+      <div class="col-lg-6">
+        <div class="appointment">
+          <h2 class="appointment-title">Payments</h2>
+          <div class="row"></div>
+          <table>
+            <thead>
+              <tr>
+                <th>User</th>
+                <th>Amount</th>
+                <th>Period</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="paymentsTableBody">
+              <!-- Data will be inserted here by JavaScript -->
+            </tbody>
+          </table>
+          <hr>
+          <button type="submit" style="width: 100%;
               padding: 18px 0 13px;
               background-color: #7b6cd5;
               border: 1px solid #7b6cd5;
@@ -107,13 +95,50 @@
               font-weight: 700;
               letter-spacing: 0.6px;
               text-transform: uppercase;" value="">Add New Payment</button>
-            
-          </div></div>
-              
-              
-               
         </div>
       </div>
     </div>
-  </body>
+  </div>
+
+  <footer class="footer">
+    <div class="copyright">
+      <div class="inside-container">
+        <div class="row">
+          <div class="col-md-6 order-2 order-md-12">
+            <p>&copy; 2019 All Rights Reserved. Created by <a href="https://www.webdomus.net/" class="created-by">Web Domus Italia</a></p>
+          </div>
+          <div class="col-md-6 social order-1 order-md-12">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      fetch('http://localhost:3000/payments')
+        .then(response => response.json())
+        .then(data => {
+          const tbody = document.getElementById('paymentsTableBody');
+          tbody.innerHTML = '';
+          data.forEach(payment => {
+            const tr = document.createElement('tr');
+            tr.innerHTML = `
+              <td>${payment.Email}</td>
+              <td>R ${payment.Amount}</td>
+              <td>${new Date(payment.StartDate).toLocaleDateString()} - ${new Date(payment.EndDate).toLocaleDateString()}</td>
+              <td>Paid</td>
+            `;
+            tbody.appendChild(tr);
+          });
+        })
+        .catch(error => console.error('Error fetching payments:', error));
+    });
+  </script>
+</body>
+
 </html>
